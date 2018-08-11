@@ -2,6 +2,9 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="bootstrap.min.css">
+    <!--- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
     <script src="Transpose-Table-jQuery-Plugin/scripts/jquery-3.2.0.js"></script>
     <script src="Transpose-Table-jQuery-Plugin/scripts/jquery-ui.js"></script>
     <script src="Transpose-Table-jQuery-Plugin/scripts/jquery.table.transpose.min.js"></script>
@@ -10,6 +13,7 @@
 	<script src="multifreezer.css"></script>
 	<script src="jquery.tablesorter.js"></script>
 	<script src="jquery.table2excel.js"></script>
+	<script src="jquery.simplePagination.js"></script>
 	<h1 align="center">SEARCH RESULTS - ONBOARDING DETAILS</h1>
 
 </head>
@@ -692,11 +696,11 @@ table.minimalistBlack tbody td {
   font-family:Arial;
 }
 table.minimalistBlack thead {
-  <!-- background: #CFCFCF; 
+  background: #CFCFCF; 
   background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
   background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
   background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);  
-  border-bottom: 4px solid #000000; --->
+  border-bottom: 4px solid #000000;
 }
 table.minimalistBlack thead th {
   font-size: 15px;
@@ -780,6 +784,8 @@ tr td:hover { background: #666; color: #FFF; }
         });
     </script>
 	
+
+	
 <script type="text/javascript">
 $(document).ready(function () {
             $("#table1").freezeHeader();
@@ -811,7 +817,41 @@ $("#btnexport").click(function () {
                       
         });
 </script>
+
+<style>
+working
+{
+    text-top:left;
+}
+</style>
+
+<div id="trial" class="working">
+<script>
+		$(function() {
+			$("#table1").simplePagination({
+				previousButtonClass: "btn btn-danger",
+				nextButtonClass: "btn btn-danger"
+			});
+
+
+		});
+	</script>
+</div>
 		
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 			
 </body>
 
