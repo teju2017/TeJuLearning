@@ -3,7 +3,7 @@
 # Date   : 13-AUG-2018
 # Desc   : Program showing the referencing and dereferencing
 #          of the perl variables to understand the complex
-#          data structures.
+#          data structures
 ###########################################################
 
 use Data::Dumper;
