@@ -1,0 +1,86 @@
+<html>
+<head>
+<h1 align="center">SEARCH PAGE - ONBOARDING DETAILS</h1>
+<body>
+<style>
+input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+<body>
+<div>
+  <form action="/action_page.php">
+    <label for="Consultation_id">CONSULTATION ID</label>
+    <input type="number" id="consultid" name="firstname" placeholder="consultation id...">
+	
+	<label for="entry_date">SYSTEM ENTRY DATE</label>
+    <input type="date" id="entrydt" name="Entry_date" placeholder="Entry Start date...">
+	
+	<label for="entry_date">SYSTEM END DATE</label>
+    <input type="date" id="entrydt" name="Entry_date" placeholder="Entry End date...">
+
+    <label for="Target system">TARGET SYSTEM</label>
+    <select id="TGT SYSTEM" name="TARGET">
+      <option value="IDMS">IDMS</option>
+      <option value="LAZAR">GERA</option>
+      <option value="GERA">LAZAR</option>
+    </select>
+	
+	<label for="Consultancy name">CONSULTANCY NAME</label>
+    <input type="text" id="consultname" name="Consultancy_Name" placeholder="consultancy Name...">
+  
+    <input type="submit" value="Search">
+  </form>
+</div>
+
+<div>
+  <form action="/action_page.php">
+  <input type="submit" value="Show all">
+<div>

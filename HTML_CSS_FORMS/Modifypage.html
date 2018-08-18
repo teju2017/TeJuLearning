@@ -1,0 +1,85 @@
+<html>
+<head>
+<h1 align="center">MODIFY PAGE - ONBOARDING DETAILS</h1>
+ <script type="text/javascript"
+           src="html5Forms.js-master/shared/js/modernizr.com/Modernizr-2.5.3.forms.js">
+     </script>
+
+     <script type="text/javascript"
+             data-webforms2-support="date"
+             data-lang="en"
+             src="html5Forms.js-master/shared/js/html5Forms.js" > 
+     </script>
+	 <h3>Enter the consultation id that you want to modify, get the id by performing the custom search</h3>
+</head>
+<body>
+<style>
+input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+h3 {
+	      text:center-right;
+		  font-family:Arial;
+		 }
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	font-family:bold;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+</body>
+
+ 
+<div>
+  <form action="/cgi-bin/data_modify.pl">
+      
+	<label for="Consultation_id">CONSULTATION ID</label>
+    <input type="number" id="consultid" name="firstname" placeholder="consultation id..." min="100" max="9999999">
+	
+	<input type="submit" value="MODIFY">
+	
+  </form>
+  
+   <form action="Search_form.html">
+     
+	    <input type="submit" value="CUSTOM SEARCH PAGE">
+	
+  </form>
+  
+</div>
+  
+  

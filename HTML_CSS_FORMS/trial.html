@@ -1,0 +1,50 @@
+<html>
+<head>
+<h1>its working well, you can try once</h1>
+</head>
+<body>
+<h3>still working on the same </h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/67_DXhS3_Hc" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/67_DXhS3_Hc" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/67_DXhS3_Hc" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/67_DXhS3_Hc" frameborder="0" allowfullscreen></iframe>
+</body>
+
+<!---- This part of the code is required to ensure there is a preloader icon till the page is loaded --->
+
+<style>
+.spinner {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+	border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;	
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+}
+    to{
+        transform: rotate(360deg);
+}
+}
+</style>
+
+<div id = "Overlay">
+<div class="spinner"</div>
+</div>
+<script type="text/javascript">
+var overlay_variable = document.getElementById('Overlay');
+window.addEventListener ("load", function() {
+      overlay_variable.style.display = 'none';
+});
+</script>

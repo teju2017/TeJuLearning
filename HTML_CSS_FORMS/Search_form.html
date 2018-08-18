@@ -1,0 +1,128 @@
+<html>
+<head>
+<h1 align="center">SEARCH PAGE - ONBOARDING DETAILS</h1>
+<script src="Transpose-Table-jQuery-Plugin/scripts/jquery-3.2.0.js"></script>
+<script src="Transpose-Table-jQuery-Plugin/scripts/jquery-ui.js"></script>
+<link href="jquery-ui-themes-1.12.1/jquery-ui.css" rel="stylesheet">
+
+
+     <!---<script type="text/javascript"
+         src="html5Forms.js-master/shared/js/modernizr.com/Modernizr-2.5.3.forms.js">
+     </script> --->
+	 
+	 <script>
+	      $(document).ready(function ()   
+		   {  $("#testdt").datepicker({ minDate:0,dateFormat:'yy-mm-dd'});
+		      $("#entrydt").datepicker({ minDate:0,dateFormat:'yy-mm-dd'});
+			  $("#entrydt_1").datepicker({ minDate:0,dateFormat:'yy-mm-dd'});
+			  $("#datepicker_1").datepicker({ minDate:0,dateFormat:'yy-mm-dd'});
+		   });
+     </script>
+
+     <script type="text/javascript"
+             data-webforms2-support="date"
+             data-lang="en"
+             src="html5Forms.js-master/shared/js/html5Forms.js" > 
+     </script>
+	 
+	
+</head>
+<body>
+<style>
+input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+</body>
+
+ 
+<div>
+  <form action="/action_page.php">
+    <label for="Consultation_id">CONSULTATION ID</label>
+    <input type="number" id="consultid" name="firstname" placeholder="consultation id...">
+	
+	
+	<label for="entry_date">TESTING DATE</label>
+    <input type="text" id="testdt" name="Entry_date" placeholder="Entry Start date...">
+	
+	<label for="entry_date">SYSTEM ENTRY DATE</label>
+    <input type="date" id="entrydt" name="Entry_date" placeholder="Entry Start date...">
+	
+	<label for="end_date">SYSTEM END DATE</label>
+    <input type="date" id="entrydt_1" name="End_date" placeholder="Entry End date...">
+
+    <label for="Target system">TARGET SYSTEM</label>
+    <select id="TGT SYSTEM" name="TARGET">
+      <option value="IDMS">IDMS</option>
+      <option value="GERA">GERA</option>
+      <option value="LAZAR">LAZAR</option>
+    </select>
+	
+	<label for="Consultancy name">CONSULTANCY NAME</label>
+    <input type="text" id="consultname" name="Consultancy_Name" placeholder="consultancy Name...">
+	
+    <label for="DATE_PICKER_CHECK">DATE PICKER CHECK</label>
+    <input type="date" id="datepicker_1" name="date_picker">
+	
+	<label for="number of feeds">feeds number</label>
+	<input type="number" id="num_feeds" name="number_feeds" min=1 max=30>
+	
+  
+    <input type="submit" value="Search">
+
+  </form>
+</div>
+
+<div>
+  <form action="/action_page.php">
+  <input type="submit" value="Show all">
+<div>
+  
+  
