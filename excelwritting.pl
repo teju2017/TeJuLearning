@@ -1,3 +1,9 @@
+###################################################
+# Perl script to write the contents into an excel
+# using the excel writter package
+###################################################
+
+
 use Excel::Writer::XLSX;
 
 print "Trying the excel writting programe";
