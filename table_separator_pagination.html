@@ -1,0 +1,866 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+	<!----<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"> -->
+	<link rel="stylesheet" href="bootstrap.min.css">
+    <!--- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
+    <script src="Transpose-Table-jQuery-Plugin/scripts/jquery-3.2.0.js"></script>
+    <script src="Transpose-Table-jQuery-Plugin/scripts/jquery-ui.js"></script>
+    <script src="Transpose-Table-jQuery-Plugin/scripts/jquery.table.transpose.min.js"></script>
+	<script src="jquery.freezeheader.js"></script>
+	<script src="multifreezer.js"></script>
+	<script src="multifreezer.css"></script>
+	<script src="jquery.tablesorter.js"></script>
+	<script src="jquery.table2excel.js"></script>
+	<script src="jquery.simplePagination.js"></script>
+	<h1 align="center">SEARCH RESULTS - ONBOARDING DETAILS</h1>
+
+</head>
+<body>
+
+        <tr>
+            <th>
+                <button id="btnTpVertical" class="button">Transpose</button>
+				<!--- <button id="btnexport" class="button">EXPORT</button> -->
+				<br></br>
+				<br></br>
+            </th>
+        </tr>
+<style>
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+	width: 10%;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+</style>
+<table id="table1" class="minimalistBlack">
+<thead>
+<tr>
+<th>Header_1_asdddfdf</th>
+<th>Header_2_asddsdsf</th>
+<th>head3</th>
+<th>head4</th>
+<th>head5</th>
+<th>head1</th>
+<th>head2</th>
+<th>head3</th>
+<th>head4</th>
+<th>head5</th>
+<th>head1</th>
+<th>head2</th>
+<th>head3</th>
+<th>head4</th>
+<th>head5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<tr>
+<td>cell1_2</td>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell3_2</td>
+<td>cell4_2</td>
+<td>cell5_2</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asd asd asd</td>
+</tr>
+<tr>
+<td>cell1_3</td>
+<td>cell2_3</td>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell4_3</td>
+<td>cell5_3</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5  asd asdd</td>
+</tr>
+<tr>
+<td>cell1_4</td>
+<td>cell2_4</td>
+<td>cell3_4</td>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell5_4</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+</tr>
+<tr>
+<td>cell1_5</td>
+<td>cell2_5</td>
+<td>cell3_5</td>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell5_5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+</tr>
+<tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr><tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+<td>foot2xxzxcx zxx zcx zxcxzc zxczxc
+asdfdf asdf asdf asdfd asdfd asdf asdfasd</td>
+<td>cell2_1</td>
+<td>cell3_1</td>
+<td>cell4_1</td>
+<td>cell5_1</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5</td>
+<td>foot1</td>
+<td>foot2</td>
+<td>foot3</td>
+<td>foot4</td>
+<td>foot5 asddddfasd dasd asd</td>
+</tr>
+</tbody>
+</table>
+
+ <tr>
+            <th>
+			    <br></br>
+				<button id="btnexport" class="button">EXPORT</button>
+				<br></br>
+				<br></br>
+            </th>
+</tr>
+
+<style>
+table.minimalistBlack {
+  border: 3px solid #000000;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.minimalistBlack td, table.minimalistBlack th {
+  border: 1px solid #000000;
+  padding: 5px 4px;
+}
+table.minimalistBlack tbody td {
+  font-size: 12px;
+  font-family:Arial;
+}
+table.minimalistBlack thead {
+  background: #CFCFCF; 
+  background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);  
+  border-bottom: 4px solid #000000;
+}
+table.minimalistBlack thead th {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  font-family:Arial;
+}
+
+thead th {
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+thead th.up {
+    padding-right: 20px;
+    background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
+}
+thead th.down {
+    padding-right: 20px;
+    background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
+}
+
+tr:nth-child(even) td { background: #f2f7f5; }
+
+/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */        
+tr:nth-child(odd) td { background: #FEFEFE; }  
+
+tr td:hover { background: #666; color: #FFF; }  
+/* Hover cell effect! */
+
+}
+
+</style>
+
+<style>
+.spinner {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+	border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 3s linear infinite;	
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+}
+    to{
+        transform: rotate(360deg);
+}
+}
+</style>
+
+<script type="text/javascript">
+        $(function () {
+            //initialize
+            if (!$("#table1").is(":blk-transpose"))
+                $("#table1").transpose({ mode: 0 });
+
+            
+        });
+
+        $("#btnTpVertical").click(function () {
+            var currentMode = $("#table1").data("tp_mode");
+            if (currentMode == undefined) {
+                $("#table1").transpose("transpose");
+                $("#btnTpVertical").html("RESET");
+            }
+            else {
+                $("#table1").transpose("reset");
+                $("#btnTpVertical").html("TRANSPOSE");
+            }
+        });
+    </script>
+	
+
+	
+<script type="text/javascript">
+$(document).ready(function () {
+            $("#table1").freezeHeader();
+        });
+		
+		$(document).ready(function() 
+    { 
+        $("#table1").tablesorter({
+		cssAsc: 'up',
+        cssDesc: 'down'
+		});
+    } 
+);  
+</script>
+
+<script>
+$("#btnexport").click(function () {
+            var currentMode = $("#table1").data("tp_mode");
+			if (currentMode == undefined) 
+			{
+			   $("#btnexport").html("EXPORTING");
+			   $("#table1").table2excel(
+			{
+			  exclude  : ".excludeThisClass",
+			  name     : "Onboarding",
+			  filename : "Onboarding_portal_information"
+			}); 
+			}
+                      
+        });
+</script>
+
+<style>
+working
+{
+    text-top:left;
+}
+</style>
+
+<div id="trial" class="working">
+<script>
+		$(function() {
+			$("#table1").simplePagination({
+				previousButtonClass: "btn btn-danger",
+				nextButtonClass: "btn btn-danger"
+			});
+
+
+		});
+	</script>
+</div>
+		
+  <!---<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> --->
+			
+</body>
+
+<div id = "Overlay">
+<div class="spinner"</div>
+</div>
+<script type="text/javascript">
+var loader = document.getElementById('Overlay');
+window.addEventListener ("load", function() {
+      loader.style.display = 'none';
+});
+</script>
