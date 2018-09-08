@@ -8,6 +8,3 @@ classes:
       - /srv/share1
       - /srv/share3
 parameters:
-
-new parameter:branch 2        
-new parameters:branch1
