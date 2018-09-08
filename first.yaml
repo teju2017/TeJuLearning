@@ -10,3 +10,6 @@ parameters:
         MASTER_BRANCH_VALUE_INCLUSION
         BRANCH_ONE VALUE
         BRANCH_ONE
+        
+new parameter:branch 2        
+new parameters:branch1
