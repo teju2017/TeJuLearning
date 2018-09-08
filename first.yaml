@@ -7,3 +7,4 @@ classes:
       - /srv/share1
       - /srv/share3
 parameters:
+        BRANCH_ONE VALUE
