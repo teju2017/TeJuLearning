@@ -7,4 +7,3 @@ classes:
       - /srv/share1
       - /srv/share3
 parameters:
-        branch_1 value
