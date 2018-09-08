@@ -1,5 +1,4 @@
 ########## This is a YAML file for loading ###################
-
 ---
 environment: production
 classes:
@@ -8,6 +7,9 @@ classes:
       - /srv/share1
       - /srv/share3
 parameters:
-
+        MASTER_BRANCH_VALUE_INCLUSION
+        BRANCH_ONE VALUE
+        BRANCH_ONE
+        
 new parameter:branch 2        
 new parameters:branch1
