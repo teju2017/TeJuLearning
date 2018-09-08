@@ -9,4 +9,5 @@ classes:
       - /srv/share3
 parameters:
 
-        new parameter:branch 2        
+new parameter:branch 2        
+new parameters:branch1
