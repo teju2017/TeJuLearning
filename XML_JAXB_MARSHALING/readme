@@ -1,0 +1,2 @@
+This example demonstrates a simple way of creating an XML file using JAXB. 
+Prerequistite to use this is to have the Maven dependency being set up for the program to run
